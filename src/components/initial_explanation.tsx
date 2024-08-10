@@ -2,15 +2,15 @@ import Image from "next/image";
 
 const InitialExplanation = () => {
     return (
-        <div className="bg-black">
-            <div className="flex items-center justify-center py-4">
-                <h1 className="text-orange-600 text-2xl sm:text-3xl md:text-4xl font-bold">
-                    Un tratamiento que no oculta tu sonrisa
-                </h1>
-            </div>
-            <div className="flex flex-col md:flex-row">
-                <p>En Ortodoncia Lingual Buenos Aires nos dedicamos a la corrección de la posición de los dientes mediante la ortodoncia lingual.</p>
-                <Image src="/explanation_image.jpg" alt="" width={300} height={250} />
+        <div className="bg-black py-8">
+            <div className="flex flex-col md:flex-row items-center justify-center md:px-16 relative">
+                <div className="relative">
+                    <Image src="/explanation_image.jpg" alt="" width={600} height={500} className="object-cover" />
+                    <div className="absolute inset-0 bg-gray-800 opacity-50 w-1/2"></div>
+                    <p className="absolute inset-0 flex items-center justify-center text-white text-2xl w-1/2 px-2">
+                        Los brackets se posicionan en las caras internas de los dientes. ¡Totalmente invisibles!
+                    </p>
+                </div>
             </div>
         </div>
     )

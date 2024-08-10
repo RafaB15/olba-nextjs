@@ -16,11 +16,11 @@ export default function Cards() {
     return (
         <div className="bg-black">
             <div className="flex items-center justify-center py-14">
-                <h1 className="text-orange-600 text-2xl sm:text-3xl md:text-5xl font-bold">
+                <h1 className="text-orange-600 text-2xl sm:text-3xl md:text-5xl font-bold text-center">
                     Un tratamiento que no oculta tu sonrisa
                 </h1>
             </div>
-            <div className="flex flex-col md:flex-row justify-between px-4 md:px-16 space-x-10">
+            <div className="flex flex-col md:flex-row justify-between px-4 md:px-16 md:space-x-10">
 
                 <Card className="bg-transparent border-none">
                     <CardHeader>

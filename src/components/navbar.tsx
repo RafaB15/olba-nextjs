@@ -13,13 +13,13 @@ const Navbar = () => {
                 </div>
                 <div className="hidden md:flex md:space-x-4">
                     <Link href="/">
-                        <div className="text-white">Home</div>
+                        <div className="text-white">Información</div>
                     </Link>
                     <Link href="/">
-                        <div className="text-white">About</div>
+                        <div className="text-white">Turnos</div>
                     </Link>
                     <Link href="/">
-                        <div className="text-white">Contact</div>
+                        <div className="text-white">Preguntas frecuentes</div>
                     </Link>
                 </div>
                 <div className='md:hidden'>
