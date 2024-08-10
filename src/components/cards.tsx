@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button"
 
 import Image from "next/image"
 import { CalendarDays, ListOrdered, MessageCircleQuestion } from 'lucide-react';
+import InitialExplanation from "./initial_explanation";
 
 export default function Cards() {
     return (
@@ -20,6 +21,7 @@ export default function Cards() {
                     Un tratamiento que no oculta tu sonrisa
                 </h1>
             </div>
+            <InitialExplanation />
             <div className="flex flex-col md:flex-row justify-between px-4 md:px-16 md:space-x-10">
 
                 <Card className="bg-transparent border-none">
