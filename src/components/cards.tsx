@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button"
 
 import Image from "next/image"
-import { CalendarDays, ListOrdered, MessageCircleQuestion } from 'lucide-react';
+import { CalendarDays, ListOrdered, MessageCircleQuestion, CircleCheck, MapPin } from 'lucide-react';
 import InitialExplanation from "./initial_explanation";
 
 export default function Cards() {
@@ -50,12 +50,52 @@ export default function Cards() {
 
                 <Card className="bg-transparent border-none">
                     <CardHeader>
+                        <CircleCheck color="#ea580c" size={72} />
+                        <CardTitle className="text-3xl text-orange-600">
+                            Ventajas
+                        </CardTitle>
+                        <CardDescription className="text-white text-lg">
+                            ¡Enteraté acerca de todas las ventajas de este tratamiento!
+                        </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="flex flex-col space-y-2">
+                            <Button variant="ghost" className="bg-orange-600">
+                                <p className="ml-2 text-base text-black">Ir a la sección</p>
+                            </Button>
+                        </div>
+                    </CardContent>
+                </Card>
+
+                <Card className="bg-transparent border-none">
+                    <CardHeader>
                         <ListOrdered color="#ea580c" size={72} />
                         <CardTitle className="text-3xl text-orange-600">
                             Tratamiento
                         </CardTitle>
                         <CardDescription className="text-white text-lg">
                             Lee acerca de las etapas del tratamiento
+                        </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="flex flex-col space-y-2">
+                            <Button variant="ghost" className="bg-orange-600">
+                                <p className="ml-2 text-base text-black">Ir a la sección</p>
+                            </Button>
+                        </div>
+                    </CardContent>
+                </Card>
+            </div>
+            <div className="flex flex-col md:flex-row justify-between px-4 md:px-16 md:space-x-10 lg:space-x-16 mx-auto md:max-w-5xl">
+
+                <Card className="bg-transparent border-none">
+                    <CardHeader>
+                        <MapPin color="#ea580c" size={72} />
+                        <CardTitle className="text-3xl text-orange-600">
+                            Sedes
+                        </CardTitle>
+                        <CardDescription className="text-white text-lg">
+                            Revisá nuestras sedes para atenderte en el lugar que mejor te quede
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
