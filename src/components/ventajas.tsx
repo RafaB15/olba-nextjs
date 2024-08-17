@@ -1,14 +1,11 @@
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 
-import { Button } from "@/components/ui/button"
-import { Gem, Eye, MessageCircleQuestion, CircleCheck, MapPin } from 'lucide-react';
+import { Gem, Eye } from 'lucide-react';
 
 import Image from "next/image";
 
@@ -16,12 +13,12 @@ export default function Ventajas() {
     return (
         <div className="bg-black py-8">
             <div className="flex items-center justify-center py-14">
-                <h1 className="text-orange-600 text-2xl sm:text-3xl md:text-5xl font-bold text-center">
+                <h1 className="text-orange-600 text-4xl md:text-5xl font-bold text-center">
                     Ventajas
                 </h1>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-between px-4 md:px-16 md:space-x-10">
+            <div className="flex flex-col md:flex-row justify-between px-4 md:px-16 md:space-x-10 space-y-5 md:space-y-0">
 
                 <Card className="bg-orange-600 border-none">
                     <CardHeader>
@@ -69,7 +66,7 @@ export default function Ventajas() {
                 </Card>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-between px-4 md:px-16 py-8 md:space-x-10">
+            <div className="flex flex-col md:flex-row justify-between px-4 md:px-16 py-8 md:space-x-10 space-y-5 md:space-y-0">
 
                 <Card className="bg-orange-600 border-none">
                     <CardHeader>
